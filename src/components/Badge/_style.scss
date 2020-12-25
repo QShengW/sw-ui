@@ -1,0 +1,73 @@
+.sw-badge-view {
+  position: relative;
+  display: inline-block;
+  color: #ee0a24;
+
+  &.sw-badge-default {
+    color: #ee0a24 !important;
+  }
+
+  &.sw-badge-primary {
+    color: $primary !important;
+  }
+
+  &.sw-badge-success {
+    color: $success !important;
+  }
+
+  &.sw-badge-warning {
+    color: $warning !important;
+  }
+
+  &.sw-badge-danger {
+    color: $danger !important;
+  }
+
+  &.sw-badge-info {
+    color: $info !important;
+  }
+
+  &.sw-badge-dot {
+    .sw-badge {
+      width: 8px;
+      min-width: 0;
+      height: 8px;
+      background-color: currentColor;
+      border-radius: 100%;
+    }
+  }
+
+  .sw-badge {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 16px;
+    padding: 0 3px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: -apple-system-font, Helvetica Neue, Arial, sans-serif;
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    background-color: currentColor;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .sw-demo-child {
+    width: 40px;
+    height: 40px;
+    background: #f2f3f5;
+    border-radius: 4px;
+  }
+}

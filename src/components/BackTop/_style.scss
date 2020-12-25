@@ -1,0 +1,26 @@
+.sw-back-top {
+  position: fixed;
+  right: 0px;
+  transition: 0.3s;
+  transform: translateX(100%);
+  width: 36px;
+  height: 36px;
+  @extend .flex-center;
+  margin-bottom: env(safe-area-inset-bottom);
+  border-radius: .15rem 0 0 .15rem;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, .7);
+
+  &:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAMAAACo9wirAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAEMzaFBwY19TH0LLew6geDSAgzKgRAAAAi0lEQVQ4y+3SSQ7CMBBE0fIQJ44JQ93/sKSRrBI2MWtQatn/LRuFw12/g39c9DkO+0KucdxHIq7cxUzvjnskk4nDDhISXU8wgBQ+COc5792ARNcrwGSi7wImsut6BRLqIUFAQn2CQBUXbvdXz9Z7gJsJdYFGFHUBiYKyqLcAj6C3F3jfCX4Y5K05PAF+zg1twSpO/gAAAABJRU5ErkJggg==);
+    background-size: 100% 100%
+  }
+}
+
+.sw-back-top-show {
+  transform: translateX(0px) !important;
+}

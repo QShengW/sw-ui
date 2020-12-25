@@ -1,0 +1,66 @@
+.sw-tab-view {
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+
+  .sw-tab-nav {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #fff;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+    height: 100%;
+    padding-bottom: 15px;
+
+    transition-duration: 0.3s;
+
+    &.sw-tab-scrollable {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      .sw-tab {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+        padding: 0 12px;
+      }
+    }
+
+    .sw-tab {
+      // position: relative; 不能加上这个属性 会导致点击获取不到 offsetLeft 
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 4px;
+      color: #646566;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+
+      span {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+
+}

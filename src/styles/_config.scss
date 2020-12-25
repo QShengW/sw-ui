@@ -1,0 +1,66 @@
+.safe-pt {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-pb {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-mt {
+  margin-top: constant(safe-area-inset-top);
+  margin-top: env(safe-area-inset-top);
+}
+
+.safe-mb {
+  margin-bottom: constant(safe-area-inset-bottom);
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-pl {
+  padding-left: constant(safe-area-inset-left);
+  padding-left: env(safe-area-inset-left);
+}
+
+.safe-pr {
+  padding-right: constant(safe-area-inset-right);
+  padding-right: env(safe-area-inset-right);
+}
+
+.safe-ml {
+  margin-left: constant(safe-area-inset-left);
+  margin-left: env(safe-area-inset-left);
+}
+
+.safe-mr {
+  margin-right: constant(safe-area-inset-right);
+  margin-right: env(safe-area-inset-right);
+}
+
+.safe {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.fixed_bottom {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 31;
+  width: 100%;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 hsla(0, 6%, 58%, .6);
+  -webkit-box-shadow: 0 0 10px 0 hsla(0, 6%, 58%, .6);
+  -moz-box-shadow: 0 0 10px 0 hsla(0, 6%, 58%, .6);
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: env(safe-area-inset-bottom);
+}

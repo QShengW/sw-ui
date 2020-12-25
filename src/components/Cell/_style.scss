@@ -1,0 +1,61 @@
+.sw-cell {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #fff;
+
+  &:last-child {
+    .border-bottom {
+      &::before {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.sw-cell-active:active {
+    background-color: #f7f8fa;
+  }
+
+  .cell-view {
+    flex: 1;
+    padding: 10px 0;
+    display: flex;
+    color: #323233;
+    font-size: 14px;
+    line-height: 24px;
+
+    .cell-title {
+      min-width: 80px;
+      color: #323233;
+      text-align: left;
+    }
+
+    .cell-value {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      color: #969799;
+      display: flex;
+      justify-content: flex-end;
+      word-wrap: break-word;
+
+      .cell-value-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        text-align: right;
+      }
+
+      .cell-value-span {
+        text-align: justify;
+      }
+
+      .iconfont {
+        margin-left: 4px;
+      }
+    }
+  }
+
+
+
+}

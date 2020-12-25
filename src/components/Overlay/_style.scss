@@ -1,0 +1,65 @@
+.sw-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: 300ms;
+  opacity: 0;
+
+  .children {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .children-over {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+}
+
+/*入场动画开始*/
+.sw-overlay-enter {
+  @include ov0
+}
+
+/*入场动画过程*/
+.sw-overlay-enter-active {
+  @include ov1
+}
+
+/*入场动画结束*/
+.sw-overlay-enter-done {
+  @include ov1
+}
+
+/*离场动画开始*/
+.sw-overlay-exit {
+  @include ov1
+}
+
+/*离场动画过程*/
+.sw-overlay-exit-active {
+  @include ov0
+}
+
+/*离场动画结束*/
+.sw-overlay-exit-done {
+  @include ov0
+}
+
+/*页面第一次加载时的开始状态*/
+.sw-overlay-appear {
+  @include ov0
+}
+
+/*页面第一次加载时的动画过程*/
+.sw-overlay-appear-active {
+  @include ov1
+}

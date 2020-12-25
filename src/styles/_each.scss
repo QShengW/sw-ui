@@ -1,0 +1,76 @@
+@each $color in red,
+green,
+yellow,
+blue {
+  .p_#{$color} {
+    background-color: #{$color};
+  }
+}
+
+@each $bj in left,
+right,
+top,
+bottom {
+  .no-m-#{$bj} {
+    margin-#{$bj}: 0 !important;
+  }
+
+  .no-p-#{$bj} {
+    margin-#{$bj}: 0 !important;
+  }
+}
+
+@for $i from 1 through 50 {
+  .h-#{$i} {
+    height: $i+px;
+  }
+
+  .m-#{$i} {
+    margin: $i+px;
+  }
+
+  .m-t-#{$i} {
+    margin-top: $i+px;
+  }
+
+  .m-b-#{$i} {
+    margin-bottom: $i+px;
+  }
+
+  .m-l-#{$i} {
+    margin-left: $i+px;
+  }
+
+  .m-r-#{$i} {
+    margin-right: $i+px;
+  }
+
+  .p-#{$i} {
+    padding: $i+px;
+  }
+
+  .p-t-#{$i} {
+    padding-top: $i+px;
+  }
+
+  .p-b-#{$i} {
+    padding-bottom: $i+px;
+  }
+
+  .p-tb-#{$i} {
+    padding-top: $i+px;
+    padding-bottom: $i+px;
+  }
+
+  .p-l-#{$i} {
+    padding-left: $i+px;
+  }
+
+  .p-r-#{$i} {
+    padding-right: $i+px;
+  }
+
+  .fz-#{$i} {
+    font-size: $i+px;
+  }
+}

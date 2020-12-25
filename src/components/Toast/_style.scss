@@ -1,0 +1,35 @@
+/* popup style begin */
+
+.sw-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  max-width: 70%;
+  padding: 16px;
+  color: #fff;
+  font-size: 14px;
+  white-space: pre-wrap;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.sw-toast-text {
+  width: -webkit-fit-content;
+  width: fit-content;
+  min-width: 96px;
+  padding: 8px 12px;
+}
+
+
+/* popup style end */

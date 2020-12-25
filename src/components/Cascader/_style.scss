@@ -1,0 +1,116 @@
+.sw-cascader {
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  @extend .flex-column;
+
+  .sw-cascader-header {
+    @extend .flex-sb;
+    height: 48px;
+    padding: 0 16px;
+
+    .sw-cascader-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .sw-cascader-icon {
+      color: #c8c9cc;
+      font-size: 22px;
+    }
+  }
+
+  .sw-cascader-nav {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    margin-top: -10px; //感觉间隙过大
+
+    .nav-item {
+      font-size: 14px;
+      color: #222;
+      display: block;
+      height: 40px;
+      line-height: 46px;
+      // padding: 0 8px;
+      font-weight: 700;
+      position: relative;
+      margin-right: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 40%;
+    }
+
+    .crt {
+      position: relative;
+      color: #f5503a;
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 3px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-image: -webkit-gradient(linear, left top, right top, from(#f5503a), to(#fad1cb));
+        background-image: -webkit-linear-gradient(left, #f5503a, #fad1cb);
+        background-image: linear-gradient(90deg, #f5503a, #fad1cb);
+        bottom: 0px;
+      }
+    }
+  }
+
+  .sw-cascader-select-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translate3d(0%, 0px, 0px);
+    will-change: left;
+    // overflow-x: hidden;
+
+    .scoll-view {
+      display: block;
+      height: inherit;
+      width: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      background-color: #fff;
+      flex-shrink: 0; //flex-shrink的默认值为1，如果没有显示定义该属性，将会自动按照默认值1在所有因子相加之后计算比率来进行空间收缩。
+      box-sizing: border-box;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        @extend .flex-sb;
+        @extend .flex-ai-center;
+        padding: 8px 16px;
+
+        &.select {
+          span {
+            color: #f5503a;
+          }
+        }
+
+        span {
+          font-size: 14px;
+          color: #222;
+        }
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+    }
+  }
+}

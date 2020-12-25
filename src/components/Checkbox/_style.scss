@@ -1,0 +1,28 @@
+.sw-checkbox {
+  @extend .flex-ai-center;
+  color: $primary;
+
+  &.sw-checkbox-on {
+    .iconfont {
+      color: currentColor;
+    }
+  }
+
+  .iconfont {
+    font-size: 20px;
+    color: #c8c9cc;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: color,
+      border-color,
+      background-color;
+    transition-property: color,
+      border-color,
+      background-color;
+  }
+
+  .sw-checkbox-label {
+    margin-left: 8px;
+    color: #323233;
+  }
+}

@@ -1,0 +1,61 @@
+.sw-switch {
+  display: inline-block;
+  height: 30px;
+
+  * {
+    box-sizing: initial;
+  }
+
+  [class|='switch'] {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 16px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .switch-on .slider,
+  .switch-off .slider {
+    -webkit-transition: background-color 0.4s, left 0.2s;
+    -o-transition: background-color 0.4s, left 0.2s;
+    transition: background-color 0.4s, left 0.2s;
+  }
+
+  .switch-on .slider {
+    left: 22px;
+  }
+
+  .switch-off .slider {
+    left: 2px;
+  }
+
+  .slider {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    left: 0;
+    top: 2px;
+  }
+
+  .switch-on {
+    transition: border 0.4s, box-shadow 0.2s, background-color 1.2s;
+    cursor: pointer;
+  }
+
+  .switch-off {
+    transition: border 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+  }
+
+  .switch-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

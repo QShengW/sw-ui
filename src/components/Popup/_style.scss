@@ -1,0 +1,94 @@
+/* popup style begin */
+
+.sw-popup {
+  position: fixed;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sw-popup-top {
+  width: 100vw;
+  top: 0;
+}
+
+.sw-popup-right {
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.sw-popup-bottom {
+  width: 100vw;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.sw-popup-left {
+  max-width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+/*入场动画开始*/
+/*入场动画过程*/
+/*离场动画开始*/
+/*离场动画过程*/
+/*离场动画结束*/
+/*页面第一次加载时的开始状态*/
+/*页面第一次加载时的动画过程*/
+
+.sw-popup-top-enter,
+.sw-popup-top-enter-active,
+.sw-popup-top-exit,
+.sw-popup-top-exit-active,
+.sw-popup-top-exit-done,
+.sw-popup-top-appear,
+.sw-popup-top-appear-active {
+  transform: translateY(-100%);
+}
+
+.sw-popup-right-enter,
+.sw-popup-right-enter-active,
+.sw-popup-right-exit,
+.sw-popup-right-exit-active,
+.sw-popup-right-exit-done,
+.sw-popup-right-appear,
+.sw-popup-right-appear-active {
+  transform: translateX(100%);
+}
+
+.sw-popup-bottom-enter,
+.sw-popup-bottom-enter-active,
+.sw-popup-bottom-exit,
+.sw-popup-bottom-exit-active,
+.sw-popup-bottom-exit-done,
+.sw-popup-bottom-appear,
+.sw-popup-bottom-appear-active {
+  transform: translateY(100%);
+}
+
+.sw-popup-left-enter,
+.sw-popup-left-enter-active,
+.sw-popup-left-exit,
+.sw-popup-left-exit-active,
+.sw-popup-left-exit-done,
+.sw-popup-left-appear,
+.sw-popup-left-appear-active {
+  transform: translateX(-100%);
+}
+
+
+
+/*入场动画结束*/
+.sw-popup-top-enter-done,
+.sw-popup-right-enter-done,
+.sw-popup-bottom-enter-done,
+.sw-popup-left-enter-done {
+  transform: translateX(0px) !important;
+  transform: translateY(0px) !important;
+}
+
+/* popup style end */
